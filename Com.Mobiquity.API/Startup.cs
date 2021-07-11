@@ -33,13 +33,15 @@ namespace Com.Mobiquity.API
             {
                 settings.Title = "Keyur Shah - Packaging Challenge API";
                 settings.Description = "Please visit this link for code and documenations https://github.com/keyurs/Mobiquity-Packaging-Challenge" + Environment.NewLine
-                                        + "To get the sample testing file, please download from github " + Environment.NewLine + Environment.NewLine
+                                        + "To get the sample testing file, please download from github https://github.com/keyurs/Mobiquity-Packaging-Challenge/blob/main/Com.Mobiquity.API/Upload/SamplePackagingInputFile.txt" + Environment.NewLine + Environment.NewLine + Environment.NewLine
                                         + "Steps to Test API are as below" + Environment.NewLine
-                                        + "Step 1: Download or Create Sample file. It should in format [MaxWeight] : (Index, Item Weight, Cost) ... As e.g. 81 : (1,53.38,€45) (2,88.62,€98) (3,78.48,€3) (4,72.30,€76) " + Environment.NewLine
-                                        + "Step 2: Upload file into API https://keyurshahpackagingchallenge.azurewebsites.net/swagger/index.html#/Packer/Packer_UploadFile" + Environment.NewLine
-                                        + "Step 3: Upload file return response with absolute path of server which will be input for other Pack API call. So copy response path" + Environment.NewLine
-                                        + "Step 4: Call Pack API with absolute path of uploaded file https://keyurshahpackagingchallenge.azurewebsites.net/swagger/index.html#/Packer/Packer_pack" + Environment.NewLine
-                                        + "Monitor response of pack API, it will result all lines output index for items best fit into package";
+                                        + "Step 1: Download or Create input file. Sample file is given here : https://github.com/keyurs/Mobiquity-Packaging-Challenge/blob/main/Com.Mobiquity.API/Upload/SamplePackagingInputFile.txt " + Environment.NewLine
+                                        + "        Make sure file should have .txt as extension" + Environment.NewLine + Environment.NewLine
+                                        + "Step 2: Upload file into API /api/Packer/uploadInputFile URL: https://keyurshahpackagingchallenge.azurewebsites.net/swagger/index.html#/Packer/Packer_UploadFile" + Environment.NewLine + Environment.NewLine
+                                        + "        Upload file return response with absolute path of server which will be input for other Pack API call. So copy response path" + Environment.NewLine + Environment.NewLine
+                                        + "Step 3: Call pack API /api/Packer/pack with absolute path of uploaded file https://keyurshahpackagingchallenge.azurewebsites.net/swagger/index.html#/Packer/Packer_pack" + Environment.NewLine + Environment.NewLine
+                                        + "        Monitor response of pack API, it will result all lines output index for items best fit into package" + Environment.NewLine + Environment.NewLine
+                                        + "Demo available at : https://github.com/keyurs/Mobiquity-Packaging-Challenge/blob/main/Com.Mobiquity.API/Upload/KeyurShahPackagingChallenge.gif";
             });
         }
 
