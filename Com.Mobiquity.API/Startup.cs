@@ -48,10 +48,8 @@ namespace Com.Mobiquity.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            // Always throw exception as APIException is expected as result when there is error instead just throw internal server error, it will throw exception
+            app.UseDeveloperExceptionPage();
 
             // Register the Swagger generator and the Swagger UI middlewares
             app.UseOpenApi();
